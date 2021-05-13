@@ -25,16 +25,16 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
 
     @IBAction func calculateTotal(_ sender: Any) {
-        let aPayment = Double(aSpending.text!)!
-        let bPayment = Double(bSpending.text!)!
-        let cPayment = Double(cSpending.text!)!
-        let dPayment = Double(dSpending.text!)!
-        let totalPayment = Double(totalSpending.text!)!
+        let aPayment = (aSpending.text! as NSString).doubleValue
+        let bPayment = (bSpending.text! as NSString).doubleValue
+        let cPayment = (cSpending.text! as NSString).doubleValue
+        let dPayment = (dSpending.text! as NSString).doubleValue
+        let totalPayment = (totalSpending.text! as NSString).doubleValue
         let totalBeforeTax = aPayment + bPayment + cPayment + dPayment
-        let aPercent = Double(aSpending.text!)! / totalBeforeTax
-        let bPercent = Double(bSpending.text!)! / totalBeforeTax
-        let cPercent = Double(cSpending.text!)! / totalBeforeTax
-        let dPercent = Double(dSpending.text!)! / totalBeforeTax
+        let aPercent = aPayment / totalBeforeTax
+        let bPercent = bPayment / totalBeforeTax
+        let cPercent = cPayment / totalBeforeTax
+        let dPercent = dPayment / totalBeforeTax
         
         let aPayAmount = totalPayment * aPercent
         let bPayAmount = totalPayment * bPercent
@@ -50,6 +50,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         cTotalLabel.text = "$\(cPayAmountDisplay)"
         dTotalLabel.text = "$\(dPayAmountDisplay)"
         self.view.endEditing(true)
+        
     }
     
     override var prefersStatusBarHidden: Bool{
