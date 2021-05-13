@@ -40,10 +40,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
         let bPayAmount = totalPayment * bPercent
         let cPayAmount = totalPayment * cPercent
         let dPayAmount = totalPayment * dPercent
-        let aPayAmountDisplay = Double(round(100*aPayAmount)/100)
-        let bPayAmountDisplay = Double(round(100*bPayAmount)/100)
-        let cPayAmountDisplay = Double(round(100*cPayAmount)/100)
-        let dPayAmountDisplay = Double(round(100*dPayAmount)/100)
+        let aPayAmountDisplay = round(100*aPayAmount)/100
+        let bPayAmountDisplay = round(100*bPayAmount)/100
+        let cPayAmountDisplay = round(100*cPayAmount)/100
+        let dPayAmountDisplay = round(100*dPayAmount)/100
         
         aTotalLabel.text = "$\(aPayAmountDisplay)"
         bTotalLabel.text = "$\(bPayAmountDisplay)"
