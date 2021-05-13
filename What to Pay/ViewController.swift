@@ -21,7 +21,6 @@ class ViewController: UIViewController,UITextFieldDelegate {
         cTotalLabel.text = ""
         dTotalLabel.text = ""
         // Do any additional setup after loading the view.
-        self.aSpending.delegate = self
     }
 
     @IBAction func calculateTotal(_ sender: Any) {
