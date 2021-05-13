@@ -25,16 +25,21 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
 
     @IBAction func calculateTotal(_ sender: Any) {
-        let totalBeforeTax = Double(aSpending.text!)! + Double(bSpending.text!)! + Double(cSpending.text!)! + Double(dSpending.text!)!
+        let aPayment = Double(aSpending.text!)!
+        let bPayment = Double(bSpending.text!)!
+        let cPayment = Double(cSpending.text!)!
+        let dPayment = Double(dSpending.text!)!
+        let totalPayment = Double(totalSpending.text!)!
+        let totalBeforeTax = aPayment + bPayment + cPayment + dPayment
         let aPercent = Double(aSpending.text!)! / totalBeforeTax
         let bPercent = Double(bSpending.text!)! / totalBeforeTax
         let cPercent = Double(cSpending.text!)! / totalBeforeTax
         let dPercent = Double(dSpending.text!)! / totalBeforeTax
         
-        let aPayAmount = Double(totalSpending.text!)! * aPercent
-        let bPayAmount = Double(totalSpending.text!)! * bPercent
-        let cPayAmount = Double(totalSpending.text!)! * cPercent
-        let dPayAmount = Double(totalSpending.text!)! * dPercent
+        let aPayAmount = totalPayment * aPercent
+        let bPayAmount = totalPayment * bPercent
+        let cPayAmount = totalPayment * cPercent
+        let dPayAmount = totalPayment * dPercent
         let aPayAmountDisplay = Double(round(100*aPayAmount)/100)
         let bPayAmountDisplay = Double(round(100*bPayAmount)/100)
         let cPayAmountDisplay = Double(round(100*cPayAmount)/100)
