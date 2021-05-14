@@ -145,10 +145,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fvO-Vq-LvR">
+                                <rect key="frame" x="154" y="237" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="0Ex-gH-d08"/>
+                                    <constraint firstAttribute="width" constant="120" id="4kr-Ql-rxV"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="resetImput:" destination="BYZ-38-t0r" eventType="touchUpInside" id="w2m-AM-yga"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="fvO-Vq-LvR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3xU-Xa-fSu"/>
                             <constraint firstItem="WcV-0g-l8c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-68.5" id="5OE-dr-9R5"/>
                             <constraint firstItem="drr-rQ-6or" firstAttribute="top" secondItem="ZyV-6X-Tkg" secondAttribute="bottom" constant="31" id="G6u-J5-mVY"/>
                             <constraint firstItem="I3K-IJ-Mtw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="171.5" id="IXt-ru-Mmh"/>
@@ -163,6 +174,7 @@
                             <constraint firstItem="I3K-IJ-Mtw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z7L-yl-K1o"/>
                             <constraint firstItem="WcV-0g-l8c" firstAttribute="top" secondItem="gb1-Ea-SYg" secondAttribute="bottom" constant="8" symbolic="YES" id="cK1-k1-26o"/>
                             <constraint firstItem="fWe-nt-qL2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="chw-FZ-sBa"/>
+                            <constraint firstItem="drr-rQ-6or" firstAttribute="top" secondItem="fvO-Vq-LvR" secondAttribute="bottom" constant="199" id="fA6-hs-7pp"/>
                             <constraint firstItem="QD0-bF-G9N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="71.5" id="fbq-wE-ztE"/>
                             <constraint firstItem="QD0-bF-G9N" firstAttribute="top" secondItem="gmM-i7-y5F" secondAttribute="bottom" constant="8" symbolic="YES" id="izI-D4-apA"/>
                             <constraint firstItem="I3K-IJ-Mtw" firstAttribute="top" secondItem="drr-rQ-6or" secondAttribute="bottom" constant="8" symbolic="YES" id="kEI-c8-xS9"/>

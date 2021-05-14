@@ -52,6 +52,18 @@ class ViewController: UIViewController,UITextFieldDelegate {
         
     }
     
+    @IBAction func resetImput(_ sender: Any) {
+        aSpending.text = ""
+        bSpending.text = ""
+        cSpending.text = ""
+        dSpending.text = ""
+        totalSpending.text = ""
+        aTotalLabel.text = "$0.0"
+        bTotalLabel.text = "$0.0"
+        cTotalLabel.text = "$0.0"
+        dTotalLabel.text = "$0.0"
+    }
+    
     override var prefersStatusBarHidden: Bool{
         return true
     }
