@@ -139,6 +139,12 @@
                                     <constraint firstAttribute="width" constant="120" id="wQL-nT-bnR"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version: 1.2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZUG-TM-iGo">
+                                <rect key="frame" x="170.66666666666666" y="871" width="86.999999999999972" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -162,8 +168,10 @@
                             <constraint firstItem="I3K-IJ-Mtw" firstAttribute="top" secondItem="drr-rQ-6or" secondAttribute="bottom" constant="8" symbolic="YES" id="kEI-c8-xS9"/>
                             <constraint firstItem="drr-rQ-6or" firstAttribute="top" secondItem="KCw-PT-tp3" secondAttribute="bottom" constant="31" id="m6Q-cf-abA"/>
                             <constraint firstItem="ZyV-6X-Tkg" firstAttribute="top" secondItem="QD0-bF-G9N" secondAttribute="bottom" constant="8" symbolic="YES" id="pij-Eq-Vf8"/>
+                            <constraint firstItem="ZUG-TM-iGo" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pjf-W4-2zx"/>
                             <constraint firstItem="xEY-VW-5Zh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="71.5" id="uky-Ok-yka"/>
                             <constraint firstItem="KCw-PT-tp3" firstAttribute="top" secondItem="WcV-0g-l8c" secondAttribute="bottom" constant="8" symbolic="YES" id="vWY-xX-sDM"/>
+                            <constraint firstItem="ZUG-TM-iGo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="xnu-uT-ZAV"/>
                             <constraint firstItem="KCw-PT-tp3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-68.5" id="zhi-MU-X5b"/>
                         </constraints>
                     </view>
