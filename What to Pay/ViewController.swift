@@ -62,6 +62,7 @@ class ViewController: UIViewController,UITextFieldDelegate {
         bTotalLabel.text = "$0.0"
         cTotalLabel.text = "$0.0"
         dTotalLabel.text = "$0.0"
+        self.view.endEditing(true)
     }
     
     override var prefersStatusBarHidden: Bool{
