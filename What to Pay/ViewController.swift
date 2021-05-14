@@ -16,10 +16,10 @@ class ViewController: UIViewController,UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        aTotalLabel.text = ""
-        bTotalLabel.text = ""
-        cTotalLabel.text = ""
-        dTotalLabel.text = ""
+        aTotalLabel.text = "$0.0"
+        bTotalLabel.text = "$0.0"
+        cTotalLabel.text = "$0.0"
+        dTotalLabel.text = "$0.0"
         // Do any additional setup after loading the view.
     }
 
