@@ -1,4 +1,5 @@
 import UIKit
+import SwiftUI
 
 class ViewController: UIViewController,UITextFieldDelegate {
 
@@ -63,6 +64,11 @@ class ViewController: UIViewController,UITextFieldDelegate {
         cTotalLabel.text = "$0.0"
         dTotalLabel.text = "$0.0"
         self.view.endEditing(true)
+    }
+    
+    @IBSegueAction func swiftUIAction(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: creditsView())
+
     }
     
     override var prefersStatusBarHidden: Bool{
